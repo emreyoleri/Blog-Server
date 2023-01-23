@@ -1,18 +1,19 @@
 const config = {
-  mongo: {
-    options: {
-      useUnifiedTopology: true,
-      useNewUrlParser: true,
-      socketTimeoutMS: 30000,
-      keepAlive: false,
-      autoIndex: false,
-      retryWrites: false,
+    mongo: {
+        options: {
+            useUnifiedTopology: true,
+            useNewUrlParser: true,
+            socketTimeoutMS: 30000,
+            keepAlive: false,
+            autoIndex: false,
+            retryWrites: false
+        },
+        url: `mongodb+srv://admin:admin123@blog-app-cluster.v0cit3b.mongodb.net/?retryWrites=true&w=majority`
     },
-    url: `mongodb+srv://admin:admin123@blog-app-cluster.v0cit3b.mongodb.net/?retryWrites=true&w=majority`,
-  },
-  server: {
-    host: "localhost",
-    port: 5000,
-  },
+    server: {
+        host: 'localhost',
+        port: 4000
+    }
+};
 
-lt config;
+export default config;
